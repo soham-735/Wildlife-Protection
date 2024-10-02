@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about endangered species and how to protect them through conservation efforts and legal measures.">
+    <title>Endangered Species</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    
+    body{ background: url('images/w') no-repeat center center fixed;
+    background-size: cover;}
+    
+    main {
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: #00796b; /* Dark teal to match the theme */
+        margin-bottom: 30px;
+        border-bottom: 3px solid #4db6ac;
+        padding-bottom: 10px;
+        font-family: 'Verdana', sans-serif;
+    }
+    
+    .species {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        gap: 100px;
+    }
+    
+    .species article {
+        overflow: hidden;
+        max-width: 350px;
+        padding: 15px;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .content {
+            max-height: 70px; /* Set max height for normal state */
+            overflow: hidden; /* Hide overflow */
+            transition: max-height 0.3s ease; /* Smooth transition */
+            padding: 15px;}
+    
+    .species article img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .species article:hover {
+        transform: scale(1.05);
+        transition-duration: 1s;
+    }
+       
+    
+    .species article:hover .content {
+                max-height: 300px;
+            }
+    
+    .species h3 {
+        font-size: 1.5em;
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+    
+    
+    </style>
+<body>
+    <header>
+        <h1>Endangered Species</h1>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="species.html" class="button">Endangered Species</a></li>
+                <li><a href="laws.html" class="button">Protection Laws</a></li>
+                <li><a href="conservation.html" class="button">Conservation Efforts</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Some of the Species at the Brink of Extinction</h2>
+        
+        <section class="species">
+            <article>
+                <h3>Amur Leopard</h3>
+                <a href="https://en.wikipedia.org/wiki/Amur_leopard" target="_blank"><img src="images/leopard.jpg" alt="Amur Leopard" /></a>
+                <div class="content"><p>The Amur Leopard or Far Eastern Leopard (Panthera pardus orientalis) is one of the eight subspecies of leopard. It is only found in the Russian Far East and North East China and the latest population census taken in 2017 suggests there are now around 100 individuals.
+
+                    As recently as the 1970s, their population in the wild had dwindled to fewer than 30 individuals, making the Amur leopard is one of the world’s most endangered big cats and for this reason it is listed as Critically Endangered by the IUCN, and CITES Appendix I for protection status.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>Sumatran Orangutan</h3>
+                <a href="https://en.wikipedia.org/wiki/Sumatran_orangutan" target="_blank" ><img src="images/orangutan.jpg" alt="Sumatran Orangutan" /></a>
+                <div class="content"><p>The Sumatran orangutan (Pongo abelii) is one of the three species of orangutans. Critically endangered, and found only in the north of the Indonesian island of Sumatra, it is rarer than the Bornean orangutan but more common than the recently identified Tapanuli orangutan, also found in Sumatra. Its common name is based on two separate local words, orang 'people; person' and hutan 'forest', derived from Malay,and translates as 'person of the forest'.The Sumatran orangutan is found only on the island of Sumatra. Deforestation and illegal pet trade have drastically reduced their population.</p>
+            </div></article>
+
+            <article>
+                <h3>Vaquita</h3>
+                <a href="https://en.wikipedia.org/wiki/Vaquita" target="_blank"><img src="images/vaquita.webp" alt="Vaquita" /></a>
+                <div class="content"><p>Vaquita, the world's rarest marine mammal, is on the edge of extinction. The plight of cetaceans—whales, dolphins, and porpoises—as a whole is exemplified by the rapid decline of the vaquita in Mexico, with about 10 individuals remaining. This little porpoise wasn't discovered until 1958 and a little over half a century later, we are on the brink of losing them forever. Vaquita are often caught and drowned in gillnets used by illegal fishing operations in marine protected areas within Mexico's Gulf of California. The population has dropped drastically in the last few years.
+
+                    The vaquita has a large dark ring around its eyes and dark patches on its lips that form a thin line from the mouth to the pectoral fins. </p>
+            </div></article>
+
+            <article>
+                <h3>Hawksbill Turtle</h3>
+                <a href="https://en.wikipedia.org/wiki/Hakwsbill_sea_turtle" target="_blank"> <img src="images/turtle.jpg" alt="Turtle" ></a>
+                <div class="content"><p>The Hawksbill turtle is one of the seven species of marine turtles and is found in nearshore tropical and subtropical waters of the Atlantic, the Indian, and the Pacific Ocean. Their numbers are believed to be between 20,000 and 23,000 nesting turtles, although it is difficult to assess their true population numbers since marine turtles are the true ocean wanderers.  In the last 30 years, the worldwide populations of hawksbill turtles have reduced by at least 80% as a consequence of accidental capture in fishing gears, nesting habitat degradation, coral reef damage and the illegal trade of hawksbill shells and products. Other human-led threats such as plastic pollution, climate change and rising sea levels could further contribute to the decline of this species in the future. At present, Hawksbill turtles are listed as critically endangered.</p>
+            </div></article>
+
+            <article>
+                <h3>Black Rhino</h3>
+                <a href="https://en.wikipedia.org/wiki/Black_rhino" target="_blank"><img src="images/Black_Rhino_1.jpg" alt="rhino" /></a>
+                <div class="content"><p>Between 1960 and 1995, black rhino populations suffered dramatic losses in their numbers due to large-scale poaching. Around 2% survived the severe onslaught of the past. As rhino conservation took hold, their numbers have more than doubled across Africa since the 1990s. But, black rhinos are still listed as critically endangered by the IUCN, with around 5,630 individuals in the wild.  Three subspecies of black rhino now survive, with the western black rhino declared extinct in 2011. Today, 95% of black rhinos are found in just four countries: Kenya, Namibia, South Africa and Zimbabwe. The biggest threat to the remaining population is still poaching for their horn—in the last 10 years, almost 10,000 African rhinos have been killed to supply the illegal rhino horn trade.</p>
+            </div></article>
+
+            <article>
+                <h3>Kakapo: The Flighless Parrot</h3>
+                <a  href="https://en.wikipedia.org/wiki/kakapo" target="_blank"><img src="images/kakapo.webp" alt="kakapo" /></a>
+                <div class="content"><p>Also known as the owl parrot, the kakapo is a nocturnal and flightless parrot endemic to New Zealand. Historically, they roamed across Polynesia and New Zealand but today, the critically endangered bird species are confined to just two small islands off the coast of southern New Zealand. There are only about 140 individuals left in the wild due to predation of invasive species such as cats and stoats that were introduced for hunting purposes. These predators have also targeted unattended eggs when females forage for food, impeding population growth and recovery. Despite intensive conservation efforts starting from more than 125 years ago, genetic diversity remains low within the kakapo population and is still extremely vulnerable to extinction, especially with disease outbreaks. </p>
+            </div></article>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Protect Our Planet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

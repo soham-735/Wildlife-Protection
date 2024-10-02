@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #00796b;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        nav {
+            display: block;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .nav-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 2em;
+        }
+
+        #intro {
+            text-align: justify;
+            padding: 20px;
+            margin: 20px;
+            font-size: 1.2em;
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4db6ac;
+            padding-bottom: 10px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        #doodle {
+            max-width: 80%;
+            float: right;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #doodle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .container img {
+            width: 22%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(247, 242, 242, 0);
+            transition: all 0.5s ease-in-out; /* Smooth transition for scaling */
+        }
+
+        .container img:hover {
+            transform: scale(1.2); /* Scale up by 1.2 to ensure the hover effect is not too large */
+            z-index: 1; /* Bring the image to the front when hovered */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #00796b;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #00796b;
+                width: 100%;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container img {
+                width: 90%;
+            }
+
+            #doodle {
+                max-width: 100%;
+                float: none;
+                margin: 0 auto;
+            }
+        }
+
+        /* Show navigation when active */
+        nav.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Protection of Wildlife Biodiversity</h1>
+        <span class="nav-toggle" onclick="toggleNav()">&#9776;</span>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="species.html" class="button">Endangered Species</a></li>
+                <li><a href="laws.html" class="button">Protection Laws</a></li>
+                <li><a href="conservation.html" class="button">Conservation Efforts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join Us in Protecting the Environment</h2>
+        <img src="images/doodle.webp" id="doodle">
+        <p id="intro">Environmental protection is the practice of protecting the natural environment by individuals, groups and governments. Its objectives are to conserve natural resources and the existing natural environment and, where it is possible, to repair damage and reverse trends.
+
+            Due to the pressures of overconsumption, population growth and technology, the biophysical environment is being degraded, sometimes permanently. This has been recognized, and governments have begun placing restraints on activities that cause environmental degradation. Since the 1960s, environmental movements have created more awareness of the multiple environmental problems. There is disagreement on the extent of the environmental impact of human activity, so protection measures are occasionally debated.</p>
+
+        <!-- Slider -->
+        <div class="container">
+            <img src="images/img1.webp">
+            <img src="images/img2.jpg">
+            <img src="images/img3.jpg">
+            <img src="images/img4.jpg">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Protect Our Planet - Environmental Awareness</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

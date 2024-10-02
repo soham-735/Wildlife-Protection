@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f8ff; /* Light sky blue background */
+    color: #333;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4db6ac; /* Teal background for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #00796b; /* Darker teal for buttons */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: #4db6ac;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 5px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.button {
+        background-color: #4CAF50; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 10px 20px; /* Some padding */
+        text-align: center; /* Center the text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make the button inline-block */
+        font-size: 16px; /* Increase font size */
+        margin: 4px 2px; /* Some margin */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    
+    .button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            padding: 15px;
+        }
+    
+        header {
+            padding: 15px;
+            text-align: center;
+        }
+    
+        header h1 {
+            font-size: 2em; /* Slightly smaller for mobile */
+            margin-bottom: 10px;
+        }
+       
+        nav ul {
+            flex-direction: column; /* Stack the navigation vertically */
+            gap: 10px; /* Reduce space between items */
+        }
+    
+        nav ul li {
+            margin: 0; /* Remove inline style for mobile */
+        }
+    
+        nav ul li a {
+            display: block;
+            padding: 12px 0;
+            text-align: center;
+            width: 100%; /* Make links fill the width */
+            font-size: 1em; /* Slightly smaller font for mobile */
+        }
+    
+        main {
+            padding: 5px;
+        }
+    
+        footer {
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.8em; /* Adjust text size */
+        }
+    
+        .button {
+            padding: 8px 15px; /* Slightly smaller buttons on mobile */
+            font-size: 14px;
+        }
+    
+        img {
+            max-width: 100%; /* Ensure images remain responsive */
+            height: auto;
+        }
+    }
+    
+    Breakdown of mobile adjustments:
+    
+        @media (max-width: 768px): This media query ensures that styles inside it only apply when the screen width is 768px or less, which is typical for tablets and mobile devices.
+    
+        Body padding: The padding is reduced for mobile to prevent excessive whitespace on smaller screens.
+    
+        Header and header text: The font size for the <h1> is reduced slightly on mobile, and padding is minimized to ensure the header is compact.
+    
+        Navigation menu:
+            On mobile, the navigation (nav ul) switches from horizontal to vertical using flex-direction: column.
+            The links become block elements to span the full width, making them easier to tap.
+            Font size and padding are adjusted to fit better on smaller screens.
+    
+        Main content and footer: Padding and margin are reduced to ensure proper spacing and readability on mobile devices.
+    
+        Buttons: Button size is slightly reduced for a better fit on mobile, while still maintaining touch-friendly sizing.
+    
+        Images: max-width: 100% ensures that images remain responsive and don’t overflow on smaller screens.
+    
